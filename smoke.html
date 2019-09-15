@@ -1,0 +1,45 @@
+<!doctype html>
+    <html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>iDontSmokeAnyway</title>
+        <link rel="stylesheet" type="text/css" href="base.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/3f5d2c0df9.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1> I don't smoke anyway </h1>
+            <i class="fas fa-smoking"></i>
+        </header>
+    
+        <section class="container" >
+            <div>
+                <button type="button" onClick="onClick()">24H</button>
+            </div>
+            <div class="txt">
+                <p>Jours sans fumer : <a id="clicks"> 0</a></p>
+            </div>
+            <div>
+                <img src="https://media.giphy.com/media/N8yg0smk34PBK/giphy.gif" alt="don't smoke">
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            var clicks = 0;
+            function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+    </body>
+
+
+    <footer>
+    </footer>
+    
+    </html>
